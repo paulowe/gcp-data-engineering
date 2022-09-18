@@ -5,3 +5,7 @@ Copy CSV file which contains the string `placeholder` in each row, reserved for 
 Find and replace placeholder with your bucket name globally
 
 `sed -i -e "s/placeholder/${BUCKET}/g" ./data.csv`
+
+# Discover Google Cloud Services URL / Endpoints (Service Discovery)
+
+https://developers.google.com/apis-explorer
