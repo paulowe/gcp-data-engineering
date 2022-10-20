@@ -11,3 +11,5 @@ export DP_STORAGE="gs://$(gcloud dataproc clusters describe <CLUSTER-NAME> --reg
 ### Find and Replace Globally
 
 `sed -i -e "s/YOUR_PROJECT_ID/$(gcloud config get-value project)/g" query.py`
+
+`sed -i -e "s/YOUR_SERVICE_ACCOUNT/bigquery-qwiklab@$(gcloud config get-value project).iam.gserviceaccount.com/g" query.py`
