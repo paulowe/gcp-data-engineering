@@ -8,6 +8,6 @@ To locate the default Cloud Storage bucket used by Cloud Dataproc enter the foll
 
 export DP_STORAGE="gs://$(gcloud dataproc clusters describe <CLUSTER-NAME> --region=us-central1 --format=json | jq -r '.config.configBucket')"
 
-Find and Replace Globally
+### Find and Replace Globally
 
 `sed -i -e "s/YOUR_PROJECT_ID/$(gcloud config get-value project)/g" query.py`
